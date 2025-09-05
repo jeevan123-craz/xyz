@@ -1,0 +1,35 @@
+body {
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* Blue and green radial gradient from sides to center */
+  background: radial-gradient(ellipse at center, #80e91d 0%, #1976d2 100%);
+}
+
+h1 {
+  color: #fff;
+  margin-bottom: 40px;
+}
+
+button {
+  font-size: 6rem;
+  padding: 5rem 12rem;
+  background: linear-gradient(90deg, #ff512f 0%, #dd2476 100%);
+  color: #fff;
+  border: none;
+  border-radius: 2rem;
+  cursor: pointer;
+  box-shadow: 0 8px 32px 0 rgba(21, 35, 228, 0.37);
+  font-weight: bold;
+  letter-spacing: 2px;
+  transition: background 0.3s, transform 0.2s;
+}
+button:hover {
+  background: linear-gradient(90deg, #dd2476 0%, #ff512f 100%);
+  transform: translateY(-4px);
+  box-shadow: 0 12px 36px 0 rgba(8, 22, 221, 0.37);
+}

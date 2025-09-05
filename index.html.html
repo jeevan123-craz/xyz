@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SOS Emergency Page</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="bike.css">
+</head>
+<body>
+  <h1>🚨 Emergency SOS</h1>
+  <button id="sos-btn" onclick="sendSOS()">Send SOS</button>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script src="car.js"></script>
+  <script>
+    // Call sendSOS when Enter key is pressed
+    document.addEventListener('keydown', function(event) {
+      if (event.key === "Enter") {
+        document.getElementById('sos-btn').click();
+      }
+    });
+  </script>
+</body>
+</html>
